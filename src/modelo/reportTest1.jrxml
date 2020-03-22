@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="905" pageHeight="620" orientation="Landscape" columnWidth="903" leftMargin="1" rightMargin="1" topMargin="1" bottomMargin="1" uuid="5fd2adc4-028a-4005-9431-aa56e5e28433">
+	<property name="ireport.zoom" value="1.4641000000000017"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="nombreAlumno" class="java.lang.String"/>
+	<parameter name="apellidoAlumno" class="java.lang.String"/>
+	<parameter name="gmail" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="42" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="96" splitType="Stretch">
+			<textField>
+				<reportElement x="118" y="33" width="100" height="20" uuid="569aa2a9-9bb5-4fd6-b8a0-105270738d23"/>
+				<textFieldExpression><![CDATA[$P{apellidoAlumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="0" width="100" height="20" uuid="4074d219-d60a-4cd5-9056-d91b96d6b6cf"/>
+				<textFieldExpression><![CDATA[$P{nombreAlumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="64" width="195" height="20" uuid="be57369d-1002-4985-8d18-1cf7cb53e0a5"/>
+				<textFieldExpression><![CDATA[$P{gmail}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="42" y="0" width="44" height="21" uuid="f5fbdab2-c998-4d2d-bd26-059dd056b879"/>
+				<text><![CDATA[Nombre:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="32" width="44" height="21" uuid="196e4604-541b-4f8f-b0f3-d964dc60fb28"/>
+				<text><![CDATA[Apellido:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="64" width="44" height="21" uuid="351e0e07-2a32-4259-9b6d-aae4cf36835b"/>
+				<text><![CDATA[Gmail:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

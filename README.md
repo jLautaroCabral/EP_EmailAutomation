@@ -1,5 +1,6 @@
-# Proyecto-de-estudiante---Registros-y-mails
-Aplicación de escritorio CRUD de alumnos, con envío de mails y conexion a base de datos MySQL  
+# EP_EmailAutomation
+###### The initials EP in any repository stand for Educational Project. These are course projects and personal experiments for learning.
 
-La aplicación soporta el envío de Gmails pero para ellos, la cuenta remitente debe estar configurada para permitir el acceso de apps no seguras  
-También permite generar un PDF con los datos de un alumno seleccionado gracias a JasperReport
+Student CRUD desktop application, with mail sending and MySQL database connection.  
+The application supports the sending of Gmails but for them, the sender account must be configured to allow access to non-secure apps.  
+It also allows to generate a PDF with the data of a selected student thanks to JasperReport.
